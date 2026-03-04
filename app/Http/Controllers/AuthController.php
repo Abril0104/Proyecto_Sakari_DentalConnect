@@ -112,7 +112,6 @@ class AuthController extends Controller
                 // Si no existe, crear la clínica
                 $clinicaId = DB::table('clinicas')->insertGetId([
                     'nombre_comercial' => $request->nombre_clinica,
-                    'rfc_clinica' => $request->rfc_clinica,
                     'numero_telefono' => $request->telefono_clinica,
                     'localidad' => $request->localidad,
                     'estado' => $request->estado_clinica,
